@@ -271,7 +271,6 @@ Once the deploy has completed, you should see the following message.
 
 You have successfully created the default Management Group resource hierarchy including additional Management Groups for demonstrating custom Landing Zone archetypes, along with the recommended Azure Policy and Access control (IAM) settings for your Azure landing zone.
 
-
 # View the resources in Azure
 ![view_resource_azure](media/view_resource_azure.jpg)
 You can find the set of management groups (https://www.techtarget.com/searchcloudcomputing/tip/Get-to-know-the-Azure-resource-hierarchy) and policies by going to the Management Group section in the Azure Portal.
