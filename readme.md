@@ -231,13 +231,26 @@ For more details about working with archetype definitions, please refer to the [
 }
 ```
 
-## Deployed Management Groups
+# Deploying the Terraform Configuration
+Now that you have your configuration set up, you need to deploy it.
 
-![Deploy-Default-Configuration](media/examples-deploy-custom-demo-landing-zone-archetypes.png)
+- Initialize Terraform with terraform init.
+Terraform is initializing the environment. It should end with the following.
 
-You have successfully created the default Management Group resource hierarchy including additional Management Groups for demonstrating custom Landing Zone archetypes, along with the recommended Azure Policy and Access control (IAM) settings for your Azure landing zone.
+- Run terraform validate
+Run terraform validate to do some pre-deployment tests on the configuration. This step is not required, but it will give you confidence before running a plan.
 
-> **TIP:** The exact number of resources created depends on the module configuration, but you can expect upwards of 200 resources to be created by this module for a default installation.
+- Run terraform plan
+Run terraform plan, which will show you what it intends to create. Because this module is so complex, there are going to be a lot of resources created. The following is the last item listed.
+
+The last line indicates that it will create 233 items, change 0 and destroy 0. If you are running this plan again after deploying it and then editing the config, you will likely see resources being changed.
+
+- Run terraform apply,
+Run terraform apply, and type in "yes" when prompted to confirm the plan to apply this configuration.
+
+Be patient for the deployment -- it will take some time.
+
+Once the deploy has completed, you should see the following message.
 
 
 
