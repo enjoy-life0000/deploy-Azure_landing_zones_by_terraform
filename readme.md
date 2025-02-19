@@ -231,6 +231,12 @@ For more details about working with archetype definitions, please refer to the [
 }
 ```
 
+## Deployed Management Groups
+
+![Deploy-Default-Configuration](media/examples-deploy-custom-demo-landing-zone-archetypes.png)
+
+You have successfully created the default Management Group resource hierarchy including additional Management Groups for demonstrating custom Landing Zone archetypes, along with the recommended Azure Policy and Access control (IAM) settings for your Azure landing zone.
+
 # Deploying the Terraform Configuration
 Now that you have your configuration set up, you need to deploy it.
 
