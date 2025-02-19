@@ -45,3 +45,21 @@ $env:ARM_TENANT_ID       = (Get-AzContext).Tenant.Id
 $env:ARM_CLIENT_SECRET   = $sp.PasswordCredentials.SecretText
 ```
 With those values stored in environment variables, the AzureRM provider will find and use them to authenticate to Azure.
+
+# Setting up a development environment
+To develop Terraform configurations, Visual Studio Code is the recommended editor. Download and install the appropriate installer for your operating system. Then, open the extensions marketplace and search for Terraform. For the best Azure experience, install both the official HashiCorp extension and Microsoft's Azure Terraform extension.
+
+- Benefits of using Terraform
+Using Terraform or any infrastructure-as-code tool has several advantages over a graphical user interface like the Azure Portal:
+
+  - Git integration. Terraform allows for version control, collaboration and automation of your infrastructure deployments within a hosted Git and CI/CD delivery.
+  - Repeatability. Terraform configurations can be reused across different environments. This ensures consistency and reduces the chance of errors.
+  - Extensibility. Terraform's modular architecture allows for integration with other tools and services, which extends its functionality.
+
+- Using Terraform also allows you to scale and standardize complex resources:
+
+  - IAM controls. Terraform lets you define and enforce IAM controls programmatically, providing scalable security governance and compliance across your entire Azure tenant.
+  - Policy enforcement. By using Terraform, you can enforce policies across many subscriptions and management groups, ensuring consistent security and compliance practices.
+  - Managed resources. Terraform simplifies the management of resources for connectivity landing zones, providing better integration, improved user experience and assured policy compliance.
+
+# Writing the Terraform Configuration
