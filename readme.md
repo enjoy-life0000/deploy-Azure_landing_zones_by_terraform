@@ -30,7 +30,13 @@ az account show
 To install Terraform, find the appropriate download for your operating system on their download page and extract the executable from the ZIP. From there, open your favorite terminal to the directory where it is downloaded. (https://developer.hashicorp.com/terraform/install)
 Update your system's global PATH environment variable to include the directory that contains the executable.
 Open a terminal window.
-terraform –version
+```hcl
+terraform –-version
+```
+
+![terraform-version](media/terraform-version.jpg)
+
+
 Authenticating Terraform
 Create a service principal and use that to authenticate to Azure using PowerShell.
 ```hcl
@@ -231,12 +237,6 @@ For more details about working with archetype definitions, please refer to the [
 }
 ```
 
-## Deployed Management Groups
-
-![Deploy-Default-Configuration](media/examples-deploy-custom-demo-landing-zone-archetypes.png)
-
-You have successfully created the default Management Group resource hierarchy including additional Management Groups for demonstrating custom Landing Zone archetypes, along with the recommended Azure Policy and Access control (IAM) settings for your Azure landing zone.
-
 # Deploying the Terraform Configuration
 Now that you have your configuration set up, you need to deploy it.
 
@@ -257,6 +257,13 @@ Run terraform apply, and type in "yes" when prompted to confirm the plan to appl
 Be patient for the deployment -- it will take some time.
 
 Once the deploy has completed, you should see the following message.
+
+# Deployed Management Groups
+
+![Deploy-Default-Configuration](media/examples-deploy-custom-demo-landing-zone-archetypes.png)
+
+You have successfully created the default Management Group resource hierarchy including additional Management Groups for demonstrating custom Landing Zone archetypes, along with the recommended Azure Policy and Access control (IAM) settings for your Azure landing zone.
+
 
 # View the resources in Azure
 You can find the set of management groups (https://www.techtarget.com/searchcloudcomputing/tip/Get-to-know-the-Azure-resource-hierarchy) and policies by going to the Management Group section in the Azure Portal.
