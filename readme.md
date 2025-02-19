@@ -54,6 +54,7 @@ With those values stored in environment variables, the AzureRM provider will fin
 
 # Setting up a development environment
 To develop Terraform configurations, Visual Studio Code is the recommended editor. Download and install the appropriate installer for your operating system. Then, open the extensions marketplace and search for Terraform. For the best Azure experience, install both the official HashiCorp extension and Microsoft's Azure Terraform extension.
+![development-environment](media/dev_environ.jpg)
 
 - Benefits of using Terraform
 Using Terraform or any infrastructure-as-code tool has several advantages over a graphical user interface like the Azure Portal:
@@ -242,17 +243,23 @@ Now that you have your configuration set up, you need to deploy it.
 
 - Initialize Terraform with terraform init.
 Terraform is initializing the environment. It should end with the following.
+![terraform_init](media/terraform_init.jpg)
+You will get a lot of output indicating that Terraform is initializing the environment. It should end with the following.
+![init_successful](media/init_successful.jpg)
 
 - Run terraform validate
 Run terraform validate to do some pre-deployment tests on the configuration. This step is not required, but it will give you confidence before running a plan.
+![terrafrom_validate](media/terraform_validate.jpg)
 
 - Run terraform plan
 Run terraform plan, which will show you what it intends to create. Because this module is so complex, there are going to be a lot of resources created. The following is the last item listed.
+![terraform_plan](media/terraform_plan.jpg)
 
 The last line indicates that it will create 233 items, change 0 and destroy 0. If you are running this plan again after deploying it and then editing the config, you will likely see resources being changed.
 
 - Run terraform apply,
 Run terraform apply, and type in "yes" when prompted to confirm the plan to apply this configuration.
+![terraform_apply](media/terraform_apply.jpg)
 
 Be patient for the deployment -- it will take some time.
 
@@ -266,6 +273,7 @@ You have successfully created the default Management Group resource hierarchy in
 
 
 # View the resources in Azure
+![view_resource_azure](media/view_resource_azure.jpg)
 You can find the set of management groups (https://www.techtarget.com/searchcloudcomputing/tip/Get-to-know-the-Azure-resource-hierarchy) and policies by going to the Management Group section in the Azure Portal.
 
 Click on the My Organization link, expand the Governance section on the left and then click on Policy. From the Policy screen, go to Compliance.
