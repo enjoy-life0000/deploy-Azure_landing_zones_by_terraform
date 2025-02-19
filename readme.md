@@ -22,10 +22,6 @@ You can check the details of the currently logged-in account with:
 az account show
 
 
-
-
-
-
 Install Terraform
 To install Terraform, find the appropriate download for your operating system on their download page and extract the executable from the ZIP. From there, open your favorite terminal to the directory where it is downloaded. (https://developer.hashicorp.com/terraform/install)
 Update your system's global PATH environment variable to include the directory that contains the executable.
