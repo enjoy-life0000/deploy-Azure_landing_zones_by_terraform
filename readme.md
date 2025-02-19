@@ -252,5 +252,15 @@ Be patient for the deployment -- it will take some time.
 
 Once the deploy has completed, you should see the following message.
 
+# View the resources in Azure
+You can find the set of management groups (https://www.techtarget.com/searchcloudcomputing/tip/Get-to-know-the-Azure-resource-hierarchy) and policies by going to the Management Group section in the Azure Portal.
+
+Click on the My Organization link, expand the Governance section on the left and then click on Policy. From the Policy screen, go to Compliance.
+
+Here you will see the policies applied by the default configuration of the landing zone. The following shows the location of the censored policies.
+
+# Delete the resources
+If you are deploying these resources as a test and you are done evaluating the deployment, you can destroy the deployed resources with terraform destroy. This will destroy only the resources you created.
+
 
 
