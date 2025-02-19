@@ -1,9 +1,9 @@
-Deploy Azure landing zones using Terraform
+# Deploy Azure landing zones using Terraform
 
-Prerequisites
+# Prerequisites
 Before you start deploying Azure landing zones using Terraform, you need to install Azure CLI, Terraform, to set Terraform up and authenticate it.
 
-Install Azure CLI on Windows
+# Install Azure CLI on Windows
 To install AzureCLI, running the following command in Powershell. The --exact option is to ensure the official Azure CLI package is installed. This command installs the latest version by default. To specify a version, add a --version <version> with your desired version to the command.
 winget install --exact --id Microsoft.AzureCLI
 To log in to Azure using the Azure CLI, you can use the az login command, 
@@ -21,8 +21,7 @@ If you have multiple subscriptions and want to set a specific one as the default
 You can check the details of the currently logged-in account with:
 az account show
 
-
-Install Terraform
+# Install Terraform
 To install Terraform, find the appropriate download for your operating system on their download page and extract the executable from the ZIP. From there, open your favorite terminal to the directory where it is downloaded. (https://developer.hashicorp.com/terraform/install)
 Update your system's global PATH environment variable to include the directory that contains the executable.
 Open a terminal window.

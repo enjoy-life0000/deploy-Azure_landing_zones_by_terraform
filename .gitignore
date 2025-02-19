@@ -1,1 +1,10 @@
 .alzlib
+.terraform.lock.hcl
+.terraform/modules/modules.json
+.terraform/providers/registry.terraform.io/azure/azapi/2.2.0/windows_amd64/terraform-provider-azapi_v2.2.0.exe
+.terraform/providers/registry.terraform.io/hashicorp/azurerm/4.19.0/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/azurerm/4.19.0/windows_amd64/terraform-provider-azurerm_v4.19.0_x5.exe
+.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/random/3.6.3/windows_amd64/terraform-provider-random_v3.6.3_x5.exe
+.terraform/providers/registry.terraform.io/hashicorp/time/0.12.1/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/time/0.12.1/windows_amd64/terraform-provider-time_v0.12.1_x5.exe
